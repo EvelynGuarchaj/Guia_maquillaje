@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glam Diary · Guía de maquillaje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="encabezado">
+      <p class="encabezado__etiqueta">Guía de maquillaje</p>
+      <h1 class="encabezado__titulo">Glam Diary ♡</h1>
+      <p class="encabezado__frase">
+        Looks dulces, gráficos y un toque de vampiro, guía paso a paso de como recrearlos en tu día a día
+      </p>
+    </header>
+
+    <nav class="filtros" aria-label="Filtrar looks por categoría">
+      <button class="filtro activo" data-categoria="todos">Todos</button>
+      <button class="filtro" data-categoria="dulce">Dulce</button>
+      <button class="filtro" data-categoria="grafico">Gráfico</button>
+      <button class="filtro" data-categoria="labios">Labios</button>
+      <button class="filtro" data-categoria="vampiro">Vampiro</button>
+    </nav>
+
+    <p id="contador" class="contador"></p>
+
+    <main id="galeria" class="galeria"></main>
+
+    <footer class="pie">
+      <p>GLAM DIARY ♡</p>
+      <p class="pie__creditos">
+        Imágenes de referencia tomadas de Pinterest
+      </p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
